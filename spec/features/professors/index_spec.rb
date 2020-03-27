@@ -13,8 +13,6 @@ RSpec.describe "When a user" do
     expect(page).to have_content(hagarid.name)
     expect(page).to have_content(hagarid.age)
     expect(page).to have_content(hagarid.specialty)
-    
-
   end
 
 end

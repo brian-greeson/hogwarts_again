@@ -1,0 +1,9 @@
+<section class="professors-list">
+  <% @professors.each do |professor| %>
+    <article class="professor-<%= professor.id %>-details">
+      <%= link_to "#{professor.name}", "#" %>
+      <p><%= professor.age %></p>
+      <p><%= professor.specialty %></p>
+    </article>
+  <% end %>
+</section>

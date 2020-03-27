@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "When a user" do
-  it "Visits /professors, I see a list of all profressor's name age specialty" do
+  it "Visits /professors/:professor_id, I see a list of the names of the students the professors have" do
     snape = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
     harry = Student.create(name: "Harry Potter" , age: 11 , house: "Gryffindor" )
     met = Student.create(name: "Met Potter" , age: 11 , house: "Gryffindor" )

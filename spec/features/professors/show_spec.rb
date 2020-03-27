@@ -6,9 +6,9 @@ RSpec.describe "When a user" do
     harry = Student.create(name: "Harry Potter" , age: 11 , house: "Gryffindor" )
     met = Student.create(name: "Met Potter" , age: 11 , house: "Gryffindor" )
     sally = Student.create(name: "Sally Potter" , age: 11 , house: "Gryffindor" )
-    ProfessorStudent.create(student_id: harry, professor_id: snape)
-    ProfessorStudent.create(student_id: met, professor_id: snape)
-    ProfessorStudent.create(student_id: sally, professor_id: snape)
+    ProfessorStudent.create(student_id: harry.id, professor_id: snape.id)
+    ProfessorStudent.create(student_id: met.id, professor_id: snape.id)
+    ProfessorStudent.create(student_id: sally.id, professor_id: snape.id)
 
     visit "/professors/#{snape.id}"
 

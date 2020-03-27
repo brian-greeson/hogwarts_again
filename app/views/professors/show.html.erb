@@ -1,4 +1,5 @@
 <section>
+  <p>Average Age: <%= @professor.students_average_age.round(1) %></p>
   <% @professor.students.each do |student| %>
     <article class="student-<%= student.id %>-details">
       <%= link_to "#{student.name}", "#" %>

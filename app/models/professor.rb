@@ -10,4 +10,8 @@ class Professor < ApplicationRecord
     end.sum
     total_age.to_f / students.count
   end
+
+  def students_alphabetical
+    students.order("name ASC")
+  end
 end

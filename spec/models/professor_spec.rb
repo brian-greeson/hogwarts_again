@@ -30,9 +30,21 @@ RSpec.describe Professor, type: :model do
       snape.reload
 
       expect(snape.students_average_age).to eq(12.25)
-
-
     end
+
+    it ".sudents_alphabetical" do
+      snape = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
+      met = Student.create(name: "Met Potter" , age: 12 , house: "Gryffindor" )
+      harry = Student.create(name: "Harry Potter" , age: 11 , house: "Gryffindor" )
+      sally = Student.create(name: "Sally Potter" , age: 13 , house: "Gryffindor" )
+      ProfessorStudent.create(student_id: sally.id, professor_id: snape.id)
+      ProfessorStudent.create(student_id: harry.id, professor_id: snape.id)
+      ProfessorStudent.create(student_id: met.id, professor_id: snape.id)
+
+      expect(snape.students).to eq([met, harry, sally])
+      expect(snape.students_alphabetical).to eq([harry, met, sally])
+    end
+
 
   end
 end

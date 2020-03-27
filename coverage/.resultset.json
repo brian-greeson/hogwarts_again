@@ -205,8 +205,12 @@
       "/Users/briangreeson/turing/mod2/challenges/hogwarts_again/config/routes.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
+          null,
+          1,
+          null,
           null,
           null
         ]
@@ -230,6 +234,32 @@
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/briangreeson/turing/mod2/challenges/hogwarts_again/spec/features/students/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           1,
           null,
@@ -344,8 +374,19 @@
           1,
           null
         ]
+      },
+      "/Users/briangreeson/turing/mod2/challenges/hogwarts_again/app/controllers/students_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1585324112
+    "timestamp": 1585324906
   }
 }

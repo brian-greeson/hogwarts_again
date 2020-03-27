@@ -1,0 +1,7 @@
+<section class="students-list">
+  <% @students.each do |student| %>
+    <article class="student-<%= student.id %>-details">
+      <%= link_to "#{student.name}: #{student.professors.count}", "#" %>
+    </article>
+  <% end %>
+</section>

@@ -1,5 +1,4 @@
 <section>
-
   <% @professor.students.each do |student| %>
     <article class="student-<%= student.id %>-details">
       <%= link_to "#{student.name}", "#" %>
